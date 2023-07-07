@@ -1,0 +1,133 @@
+<html>
+  <meta charset="UTF-8" /><meta
+    content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5"
+    name="viewport"
+  /><meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  /><link
+    href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <link
+    href="https://hanyauntukmu.likeadream.repl.co/style.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <script src="https://hanyauntukmu.likeadream.repl.co/script.js"></script>
+  <head> 
+    <title> To Shelly (2023.07.07) :D</title>
+  </head>
+  <style>
+    body {
+      background-image: url(image/bg.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-y: bottom;
+    }
+    body::before {
+      content: "" !important;
+      color: transparent !important;
+    }
+  </style>
+  <body>
+    <div id="bodyblur">
+      <!-- <img
+        src="https://i.postimg.cc/NMLZ6Zk5/IMG-20220207-131156-010.jpg"
+        width="100%"
+        height="100%"
+      /> -->
+    </div>
+
+    <div id="Content">
+      <div class="image">
+        <img
+          src="image/peachcat-peachcat-and-goma.gif"
+          width="130px"
+          height="130px"
+        />
+      </div>
+      <div>
+        <blockquote>
+          <p id="text"></p>
+          <p id="text2"></p>
+        </blockquote>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function play() {
+        var audio = new Audio(
+          "https://sndup.net/tqdx/d"
+        )
+        audio.play()
+      }
+
+      const swals = Swal.mixin({
+        allowOutsideClick: false,
+        cancelButtonColor: "#FF0040",
+      })
+      const swalsy = Swal.mixin({
+        confirmButtonText: "Iya",
+        allowOutsideClick: false,
+      })
+      const swalst = Swal.mixin({
+        allowOutsideClick: false,
+        showConfirmButton: false,
+        timer: 5000,
+        timerProgressBar: true,
+      })
+
+      async function mulaitanya() {
+        var { isConfirmed: tanyawal } = await swals.fire({
+          title: `宝贝大人 :D 请接受我的道歉叭！`,
+          imageUrl: "image/xwl.jpeg",
+          imageWidth: 120,
+          imageHeight: 160,
+          confirmButtonText: "好的👌",
+          allowOutsideClick: false,
+          showCancelButton: false,
+        })
+        if (tanyawal) {
+          play()
+          kuis()
+        }
+      }
+
+      async function kuis() {
+        await swalst.fire({
+          title: "知道你工作已经很累了 :( 让我给你按摩一下🦵",
+          imageUrl: "image/peach-goma.gif",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+        await swalst.fire({
+          title: "宝贝别生气气，有我在你身边，我会好好照顾你的💗",
+          imageUrl: "image/tepukbadan.gif",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+        await swalst.fire({
+          title: "来亲一口，你永远是我的最爱❤️",
+          imageUrl: "image/gigit.gif",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+        await swalst.fire({
+          title: "你一定要好好的呢，不然我也会难过的 &#129402;",
+          imageUrl: "image/bear-cute-1.gif",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+        text = "You always be my sweetheart "
+        emotnama = "&#10084;"
+        text2 = "我爱你，徐琬琳，我们要一直在一起！ :) 爱你的 Pan"
+        showDiv()
+      }
+      mulaitanya()
+    </script>
+  </body>
+</html>
